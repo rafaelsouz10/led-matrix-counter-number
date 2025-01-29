@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "author": "Rafael Souza Barbosa",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-pi-pico-w", "id": "pico", "top": -22.45, "left": 3.55, "attrs": {} },
+    {
+      "type": "wokwi-neopixel-matrix",
+      "id": "neopixels",
+      "top": -150.2,
+      "left": -15.86,
+      "rotate": 180,
+      "attrs": { "rows": "5", "cols": "5", "matrixLayout": "serpentine" }
+    },
+    { "type": "wokwi-rgb-led", "id": "rgb1", "top": 61.6, "left": -123.7, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 147.95,
+      "left": -67.2,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": -28.9,
+      "left": -169.3,
+      "rotate": 90,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": -28.9,
+      "left": -102.1,
+      "rotate": 90,
+      "attrs": { "color": "grey" }
+    }
+  ],
+  "connections": [
+    [ "neopixels:DIN", "pico:GP7", "purple", [ "v-9.6", "h-67.2", "v240", "h38.4" ] ],
+    [ "neopixels:VCC", "pico:VBUS", "red", [ "v-19.2", "h86.4", "v163.2" ] ],
+    [ "neopixels:GND", "pico:GND.8", "black", [ "v-9.6", "h67.2", "v172.8" ] ],
+    [ "r1:1", "rgb1:COM", "black", [ "h0" ] ],
+    [ "pico:GND.4", "r1:2", "black", [ "h0" ] ],
+    [ "pico:GP5", "btn1:2.r", "gold", [ "h0" ] ],
+    [ "pico:GP6", "btn2:2.r", "gray", [ "h-86.4", "v-86.6" ] ],
+    [ "pico:GND.2", "btn2:1.r", "black", [ "h0" ] ],
+    [ "btn1:1.r", "pico:GND.2", "black", [ "v0" ] ],
+    [ "pico:GP13", "rgb1:R", "red", [ "h0" ] ],
+    [ "pico:GP12", "rgb1:B", "blue", [ "h0" ] ],
+    [ "pico:GP11", "rgb1:G", "green", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}

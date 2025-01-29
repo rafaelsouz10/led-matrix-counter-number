@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = 'build/led-matrix-counter-number.uf2'
+elf = 'build/led-matrix-counter-number.elf'
