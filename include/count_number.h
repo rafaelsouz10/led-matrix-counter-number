@@ -82,57 +82,44 @@ int frame9[5][5][3] = {
     {{0, 0, 0}, {177, 10, 51}, {177, 10, 51}, {177, 10, 51}, {0, 0, 0}}
 };
 
-void count_number_09(int sleep){
+void controle_numero(int number_control){
 
-    print_sprite(frame0);
-    npWrite();
-    sleep_ms(sleep);
-    npClear();
-    
-    print_sprite(frame1);
-    npWrite();
-    sleep_ms(sleep);
     npClear();
 
-    print_sprite(frame2);
-    npWrite();
-    sleep_ms(sleep);
-    npClear();
+    if (number_control == 0) {
+        print_sprite(frame0);
 
-    print_sprite(frame3);
-    npWrite();
-    sleep_ms(sleep);
-    npClear();
+    } else if (number_control == 1) {
+        print_sprite(frame1);
 
-    print_sprite(frame4);
-    npWrite();
-    sleep_ms(sleep);
-    npClear();
+    } else if (number_control == 2) {
+        print_sprite(frame2);
 
-    print_sprite(frame5);
-    npWrite();
-    sleep_ms(sleep);
-    npClear();
+    } else if (number_control == 3) {
+        print_sprite(frame3);
 
-    print_sprite(frame6);
-    npWrite();
-    sleep_ms(sleep);
-    npClear();
+    } else if (number_control == 4) {
+        print_sprite(frame4);
 
-    print_sprite(frame7);
-    npWrite();
-    sleep_ms(sleep);
-    npClear();
+    } else if (number_control == 5) {
+        print_sprite(frame5);
 
-    print_sprite(frame8);
-    npWrite();
-    sleep_ms(sleep);
-    npClear();
+    } else if (number_control == 6) {
+        print_sprite(frame6);
 
-    print_sprite(frame9);
+    } else if (number_control == 7) {
+        print_sprite(frame7);
+
+    } else if (number_control == 8) {
+        print_sprite(frame8);
+
+    } else if (number_control == 9) {
+        print_sprite(frame9);
+
+    } else {
+        printf("numero não encontrado.");
+    }
     npWrite();
-    sleep_ms(sleep);
-    npClear();
 }
 
 #endif
