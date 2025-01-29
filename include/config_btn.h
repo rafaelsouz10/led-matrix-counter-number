@@ -8,7 +8,7 @@
 #define BTN_B 6
 
 // Variáveis globais 
-static volatile uint32_t last_time_A = 0;// Armazena o tempo do último evento (em microssegundos)
+static volatile uint32_t last_time = 0;// Armazena o tempo do último evento (em microssegundos)
 static volatile uint32_t last_time_B = 0;
 volatile bool BTN_A_PRESSIONADO = false;
 volatile bool BTN_B_PRESSIONADO = false;
@@ -33,8 +33,8 @@ void gpio_irq_handler(uint gpio, uint32_t events){
   uint32_t current_time = to_us_since_boot(get_absolute_time());
   
   // Verifica se passou tempo suficiente desde o último evento
-  if (current_time - last_time_A > 300000) { // 200 ms de debouncing
-    last_time_A = current_time; // Atualiza o tempo do último evento
+  if (current_time - last_time > 300000) { // 200 ms de debouncing
+    last_time = current_time; // Atualiza o tempo do último evento
 
     if (gpio == BTN_A) {
       printf("Botão A pressionado! ");
