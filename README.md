@@ -92,12 +92,10 @@ Abaixo está o mapeamento de conexões entre os componentes e a Raspberry Pi Pic
    | Botão A (Amarelo)       | GPIO 5                                  |
    | Botão B (Cinza)         | GPIO 6                                  |
    | LED RGB Vermelho        | GPIO 13                                 |
-   | LED RGB Verde           | GPIO 11                                 |
-   | LED RGB Azul            | GPIO 12                                 |
 
 ---
 
-##Funcionamento do Sistema
+### Funcionamento do Sistema
 
    1 - **Botões de Controle**: Dois botões físicos (Botão A e Botão B) conectados à Raspberry Pi Pico W permitem interações e controle do sistema.
    
@@ -106,12 +104,14 @@ Abaixo está o mapeamento de conexões entre os componentes e a Raspberry Pi Pic
    3 - **LED RGB**: com o led vermelho sendo piscado 5 vezes por segundo.
    
 
-##Funcionalidades Implementadas
+## Funcionalidades Implementadas
 
-Botões de Controle
+### Botões de Controle
 
    . **Botão A (GPIO 5)**: Decrementa de 9 a 0 e acionando a animação respectiva na matriz de LEDs.
 
    . **Botão B (GPIO 6)**: Incrementa de 0 a 9 e acionando a animação respectiva na matriz de LEDs.
 
    . **LED RGB RED** (GPIO 13)**: pisca periodicamente 5 vezes por segundo, demonstrando o uso de interrupções e timers.
+
+--- 
