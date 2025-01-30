@@ -106,8 +106,6 @@ Abaixo está o mapeamento de conexões entre os componentes e a Raspberry Pi Pic
 
 #### Funcionalidades Implementadas
 
-#### Botões de Controle
-
    1. **Botão A (GPIO 5)**: Decrementa de 9 a 0 e acionando a animação respectiva na matriz de LEDs.
 
    2. **Botão B (GPIO 6)**: Incrementa de 0 a 9 e acionando a animação respectiva na matriz de LEDs.
