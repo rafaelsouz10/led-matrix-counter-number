@@ -104,9 +104,9 @@ Abaixo está o mapeamento de conexões entre os componentes e a Raspberry Pi Pic
    3. **LED RGB**: com o led vermelho sendo piscado 5 vezes por segundo.
    
 
-## Funcionalidades Implementadas
+#### Funcionalidades Implementadas
 
-## Botões de Controle
+#### Botões de Controle
 
    1. **Botão A (GPIO 5)**: Decrementa de 9 a 0 e acionando a animação respectiva na matriz de LEDs.
 
