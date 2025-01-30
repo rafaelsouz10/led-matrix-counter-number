@@ -28,7 +28,7 @@ Projeto da atividade **EmbarcaTech**, Unidade 4, Capítulo 4, sobre interrupçõ
 
 Clone o repositório para o seu computador:
 ```bash
-[git clone https://github.com/rafaelsouz10/led-matrix-animations.git](https://github.com/rafaelsouz10/led-matrix-counter-number.git)
+git clone https://github.com/rafaelsouz10/led-matrix-animations.git
 cd led-matrix-counter-number
 code .
 ```
