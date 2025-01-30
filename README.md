@@ -78,3 +78,40 @@ Após ter configurado o VS Code conforme descrito no item 3, siga os passos abai
    - Clique em **Compile Project**.
 
 3. Execute o projeto clicando em **Run Project USB**, localizado abaixo do botão **Compile Project**.
+
+---
+
+#### Conexões e Esquemático
+
+Abaixo está o mapeamento de conexões entre os componentes e a Raspberry Pi Pico W da placa BitDogLab:
+
+
+   |     **Componentes**     |        **Pino Conectacos (GPIO)**       |
+   |-------------------------|-----------------------------------------|
+   | Matriz de LEDs Neopixel | GPIO 7                                  |
+   | Botão A (Amarelo)       | GPIO 5                                  |
+   | Botão B (Cinza)         | GPIO 6                                  |
+   | LED RGB Vermelho        | GPIO 13                                 |
+   | LED RGB Verde           | GPIO 11                                 |
+   | LED RGB Azul            | GPIO 12                                 |
+
+---
+
+##Funcionamento do Sistema
+
+   1 - **Botões de Controle**: Dois botões físicos (Botão A e Botão B) conectados à Raspberry Pi Pico W permitem interações e controle do sistema.
+   
+   2 - **Matriz de LEDs Neopixel 5x5**: Utilizada para exibir animações de 0 a 9.
+   
+   3 - **LED RGB**: com o led vermelho sendo piscado 5 vezes por segundo.
+   
+
+##Funcionalidades Implementadas
+
+Botões de Controle
+
+   . **Botão A (GPIO 5)**: Decrementa de 9 a 0 e acionando a animação respectiva na matriz de LEDs.
+
+   . **Botão B (GPIO 6)**: Incrementa de 0 a 9 e acionando a animação respectiva na matriz de LEDs.
+
+   . **LED RGB RED** (GPIO 13)**: pisca periodicamente 5 vezes por segundo, demonstrando o uso de interrupções e timers.
