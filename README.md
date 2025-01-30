@@ -1,8 +1,13 @@
 ## Sistema Integrado com Raspberry Pi Pico, 2 botões, matriz 5X5 de led RGB e um led RGB
 
+---
+
 ## Descrição do Projeto
 
 Projeto da atividade **EmbarcaTech**, Unidade 4, Capítulo 4, sobre interrupções em sistemas embarcados. O código controla uma **matriz de LEDs WS2812** para exibir números de 0 a 9, com interação por dois **botões (incremento e decremento)**. Um **LED RGB** (vermelho) pisca periodicamente 5 vezes por segundo, demonstrando o uso de interrupções e timers.
+
+![image](https://github.com/user-attachments/assets/5ceb46ff-f0ff-4e1c-9532-17dc884a6ff9)
+
 
 ---
 
