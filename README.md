@@ -81,7 +81,7 @@ Após ter configurado o VS Code conforme descrito no item 3, siga os passos abai
 
 ---
 
-#### Conexões e Esquemático
+### 6. Conexões e Esquemático
 
 Abaixo está o mapeamento de conexões entre os componentes e a Raspberry Pi Pico W da placa BitDogLab:
 
@@ -95,7 +95,7 @@ Abaixo está o mapeamento de conexões entre os componentes e a Raspberry Pi Pic
 
 ---
 
-### Funcionamento do Sistema
+### 7. Funcionamento do Sistema
 
    1 - **Botões de Controle**: Dois botões físicos (Botão A e Botão B) conectados à Raspberry Pi Pico W permitem interações e controle do sistema.
    
@@ -106,7 +106,7 @@ Abaixo está o mapeamento de conexões entre os componentes e a Raspberry Pi Pic
 
 ## Funcionalidades Implementadas
 
-### Botões de Controle
+## Botões de Controle
 
    . **Botão A (GPIO 5)**: Decrementa de 9 a 0 e acionando a animação respectiva na matriz de LEDs.
 
@@ -115,3 +115,6 @@ Abaixo está o mapeamento de conexões entre os componentes e a Raspberry Pi Pic
    . **LED RGB RED** (GPIO 13)**: pisca periodicamente 5 vezes por segundo, demonstrando o uso de interrupções e timers.
 
 --- 
+### 8. Vídeo Demonstrativo
+
+O vídeo será adicionado aqui
