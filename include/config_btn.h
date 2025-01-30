@@ -43,18 +43,6 @@ void gpio_irq_handler(uint gpio, uint32_t events){
       printf("Botão B pressionado! ");
       BTN_B_PRESSIONADO = true;
     }
-
-  // if (gpio == BTN_A && current_time - last_time_A > 300000) { // 200 ms de debouncing
-  //   last_time_A = current_time; // Atualiza o tempo do último evento
-
-  //   printf("Botão A pressionado! ");
-  //   BTN_A_PRESSIONADO = true;
-
-  // } else if (gpio == BTN_B && current_time - last_time_B > 300000) { // 200 ms de debouncing
-  //   last_time_B = current_time; // Atualiza o tempo do último evento
-  //   printf("Botão B pressionado! ");
-  //   BTN_B_PRESSIONADO = true;
-  // }
   }
 }
 

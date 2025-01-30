@@ -1,7 +1,6 @@
 #ifndef COUNT_NUMBER_H
 #define COUNT_NUMBER_H
 
-
 int frame0[5][5][3] = { 
     {{0, 0, 0}, {242, 250, 202}, {242, 250, 202}, {242, 250, 202}, {0, 0, 0}},
     {{0, 0, 0}, {242, 250, 202}, {0, 0, 0}, {242, 250, 202}, {0, 0, 0}},
@@ -86,39 +85,18 @@ void controle_numero(int number_control){
 
     npClear();
 
-    if (number_control == 0) {
-        print_sprite(frame0);
+    if (number_control == 0) print_sprite(frame0);
+    else if (number_control == 1) print_sprite(frame1);
+    else if (number_control == 2) print_sprite(frame2);
+    else if (number_control == 3) print_sprite(frame3);
+    else if (number_control == 4) print_sprite(frame4);
+    else if (number_control == 5) print_sprite(frame5);
+    else if (number_control == 6) print_sprite(frame6);
+    else if (number_control == 7) print_sprite(frame7);
+    else if (number_control == 8) print_sprite(frame8);
+    else if (number_control == 9) print_sprite(frame9);
+    else printf("numero não encontrado.");
 
-    } else if (number_control == 1) {
-        print_sprite(frame1);
-
-    } else if (number_control == 2) {
-        print_sprite(frame2);
-
-    } else if (number_control == 3) {
-        print_sprite(frame3);
-
-    } else if (number_control == 4) {
-        print_sprite(frame4);
-
-    } else if (number_control == 5) {
-        print_sprite(frame5);
-
-    } else if (number_control == 6) {
-        print_sprite(frame6);
-
-    } else if (number_control == 7) {
-        print_sprite(frame7);
-
-    } else if (number_control == 8) {
-        print_sprite(frame8);
-
-    } else if (number_control == 9) {
-        print_sprite(frame9);
-
-    } else {
-        printf("numero não encontrado.");
-    }
     npWrite();
 }
 

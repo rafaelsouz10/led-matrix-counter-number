@@ -10,7 +10,7 @@
 #define LED_BLUE 11
 
 // Variáveis globais
-int number_control = 0;
+int number_control = -1;
 
 void setup_gpio_leds(){
 
@@ -42,18 +42,18 @@ int main() {
   gpio_set_irq_interrupt_btn();// Configuração da interrupção com callback para botão
 
   while (true) {
-    if (BTN_A_PRESSIONADO) {      
+    if (BTN_A_PRESSIONADO) {
+      if (number_control > 0) number_control--;
       printf("number: %d\n", number_control);
       controle_numero(number_control);
       BTN_A_PRESSIONADO = false;
-      if (number_control > 0) number_control--;
     }
 
     if (BTN_B_PRESSIONADO) {
+      if (number_control < 9) number_control++;
       printf("number: %d\n", number_control);
       controle_numero(number_control);
       BTN_B_PRESSIONADO = false;
-      if (number_control < 9) number_control++;
     }
 
     blink_led(100); //led ligado a 100ms e desligado em 100ms, piscando 5 vezes por segundo

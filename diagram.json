@@ -12,7 +12,13 @@
       "rotate": 180,
       "attrs": { "rows": "5", "cols": "5", "matrixLayout": "serpentine" }
     },
-    { "type": "wokwi-rgb-led", "id": "rgb1", "top": 61.6, "left": -123.7, "attrs": {} },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "rgb1",
+      "top": 61.6,
+      "left": -123.7,
+      "attrs": { "common": "cathode" }
+    },
     {
       "type": "wokwi-resistor",
       "id": "r1",
