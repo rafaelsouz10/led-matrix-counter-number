@@ -97,22 +97,22 @@ Abaixo está o mapeamento de conexões entre os componentes e a Raspberry Pi Pic
 
 ### 7. Funcionamento do Sistema
 
-   1 - **Botões de Controle**: Dois botões físicos (Botão A e Botão B) conectados à Raspberry Pi Pico W permitem interações e controle do sistema.
+   1. **Botões de Controle**: Dois botões físicos (Botão A e Botão B) conectados à Raspberry Pi Pico W permitem interações e controle do sistema.
    
-   2 - **Matriz de LEDs Neopixel 5x5**: Utilizada para exibir animações de 0 a 9.
+   2. **Matriz de LEDs Neopixel 5x5**: Utilizada para exibir animações de 0 a 9.
    
-   3 - **LED RGB**: com o led vermelho sendo piscado 5 vezes por segundo.
+   3. **LED RGB**: com o led vermelho sendo piscado 5 vezes por segundo.
    
 
 ## Funcionalidades Implementadas
 
 ## Botões de Controle
 
-   . **Botão A (GPIO 5)**: Decrementa de 9 a 0 e acionando a animação respectiva na matriz de LEDs.
+   1. **Botão A (GPIO 5)**: Decrementa de 9 a 0 e acionando a animação respectiva na matriz de LEDs.
 
-   . **Botão B (GPIO 6)**: Incrementa de 0 a 9 e acionando a animação respectiva na matriz de LEDs.
+   2. **Botão B (GPIO 6)**: Incrementa de 0 a 9 e acionando a animação respectiva na matriz de LEDs.
 
-   . **LED RGB RED** (GPIO 13)**: pisca periodicamente 5 vezes por segundo, demonstrando o uso de interrupções e timers.
+   3. **LED RGB RED** (GPIO 13)**: pisca periodicamente 5 vezes por segundo, demonstrando o uso de interrupções e timers.
 
 --- 
 ### 8. Vídeo Demonstrativo
